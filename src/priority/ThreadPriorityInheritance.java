@@ -1,3 +1,5 @@
+package priority;
+
 public class ThreadPriorityInheritance {
     static class MyRunnable implements Runnable {
         @Override

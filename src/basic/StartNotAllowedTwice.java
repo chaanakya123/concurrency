@@ -1,3 +1,5 @@
+package basic;
+
 public class StartNotAllowedTwice {
     static class MyRunnable implements Runnable {
         @Override

@@ -1,3 +1,4 @@
+package deadlock;
 
 public class DeadLockSample {
     static class MyRunnable implements Runnable {

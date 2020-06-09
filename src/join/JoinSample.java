@@ -1,3 +1,5 @@
+package join;
+
 public class JoinSample {
     static class MyRunnable implements Runnable {
         @Override

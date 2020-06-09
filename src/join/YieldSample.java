@@ -1,3 +1,5 @@
+package join;
+
 public class YieldSample {
     static class MyRunnable implements Runnable {
         @Override

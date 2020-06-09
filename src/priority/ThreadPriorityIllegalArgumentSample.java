@@ -1,3 +1,5 @@
+package priority;
+
 public class ThreadPriorityIllegalArgumentSample {
     static class MyRunnable implements Runnable {
         @Override

@@ -1,4 +1,6 @@
-public class SampleThreadCallingRun {
+package basic;
+
+public class SampleThread {
     static class MyRunnable implements Runnable {
         @Override
         public void run() {
@@ -16,9 +18,9 @@ public class SampleThreadCallingRun {
         Thread child2 = new Thread(new MyRunnable());
         child2.setName("Child 2");
 
-        // calling run is just like ny other method call. It will not initialize new threads
-        child1.run();
-        child2.run();
+        // will start new threads
+        child1.start();
+        child2.start();
 
         for (int i = 0;i<10;i++){
             System.out.println(Thread.currentThread().getName() + " : " + i);
