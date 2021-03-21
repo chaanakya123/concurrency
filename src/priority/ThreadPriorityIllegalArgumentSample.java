@@ -29,3 +29,18 @@ public class ThreadPriorityIllegalArgumentSample {
         child.start();
     }
 }
+/*
+main : 0
+main : 1
+main : 2
+main : 3
+main : 4
+main : 5
+main : 6
+main : 7
+main : 8
+main : 9
+Exception in thread "main" java.lang.IllegalArgumentException
+	at java.base/java.lang.Thread.setPriority(Thread.java:1137)
+	at priority.ThreadPriorityIllegalArgumentSample.main(ThreadPriorityIllegalArgumentSample.java:28)
+ */

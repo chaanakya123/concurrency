@@ -46,3 +46,19 @@ public class InterruptJoin {
         System.out.println("main complete");
     }
 }
+
+/*
+main : 0
+main : 1
+main : 2
+main : 3
+main : 4
+main : 5
+main : 6
+main : 7
+main : 8
+main : 9
+main complete
+I (Child 2) am interrupted
+I (Child 1) am interrupted
+ */

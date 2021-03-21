@@ -207,3 +207,79 @@ public class SynchronizationCombined {
         System.out.println("main ends");
     }
 }
+
+/*
+main ends
+current Thread : Child 4
+current Thread : Child 3
+current Thread : Child 6
+current Thread : Child 1
+Child 1 : 0
+Child 3 : 0
+Child 4 : 0
+Child 6 : 0
+Child 6 : 1
+Child 3 : 1
+Child 1 : 1
+Child 4 : 1
+Child 6 : 2
+Child 4 : 2
+Child 3 : 2
+Child 1 : 2
+Child 4 : 3
+Child 3 : 3
+Child 1 : 3
+Child 6 : 3
+Child 4 : 4
+Child 3 : 4
+Child 6 : 4
+Child 1 : 4
+Child 4 : 5
+Child 6 : 5
+Child 1 : 5
+Child 3 : 5
+Child 4 : 6
+Child 3 : 6
+Child 6 : 6
+Child 1 : 6
+Child 3 : 7
+Child 1 : 7
+Child 4 : 7
+Child 6 : 7
+Child 3 : 8
+Child 1 : 8
+Child 4 : 8
+Child 6 : 8
+Child 4 : 9
+Child 6 : 9
+Child 1 : 9
+Child 3 : 9
+loop 1 ends
+loop 4 ends
+loop 6 ends
+loop 3 ends
+current Thread : Child 2
+current Thread : Child 5
+Child 2 : 0
+Child 5 : 0
+Child 2 : 1
+Child 5 : 1
+Child 5 : 2
+Child 2 : 2
+Child 2 : 3
+Child 5 : 3
+Child 2 : 4
+Child 5 : 4
+Child 2 : 5
+Child 5 : 5
+Child 5 : 6
+Child 2 : 6
+Child 2 : 7
+Child 5 : 7
+Child 2 : 8
+Child 5 : 8
+Child 2 : 9
+Child 5 : 9
+loop 5 ends
+loop 2 ends
+ */

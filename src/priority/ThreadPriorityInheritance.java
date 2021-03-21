@@ -57,3 +57,14 @@ public class ThreadPriorityInheritance {
         child2.start();
     }
 }
+
+/*
+main : 5
+main-> child 1 : 5
+main-> child 2 : 6
+main-> child 2 -> child 1 : 6
+main-> child 2 -> child 2 : 7
+main-> child 2 -> child 2 -> child 1 : 7
+main-> child 2 -> child 2 -> child 2 : 8
+main-> child 2 -> child 2 -> child 2 -> child 1 : 8
+ */

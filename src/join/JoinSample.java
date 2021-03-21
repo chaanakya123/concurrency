@@ -40,6 +40,7 @@ public class JoinSample {
         // execution would be here only after completion of child1, child2
         final long startTime = System.currentTimeMillis();
 
+        System.out.println("Starting child 3 and 4");
        // start child 3 and child 4
         child3.start();
         child4.start();
@@ -55,7 +56,7 @@ public class JoinSample {
         final long endTime = System.currentTimeMillis();
         // the difference should denitely be >= 1000, as we are waiting 500ms for child3
         // and 500ms for child4
-        System.out.println("time the main thread waited to start executing the loop: " + (endTime - startTime));
+        System.out.println("time the main thread waited for child 3 and child 4 to complete: " + (endTime - startTime));
 
         for (int i = 0; i < 10; i++){
             System.out.println(Thread.currentThread().getName() + " : " + i);
@@ -64,3 +65,59 @@ public class JoinSample {
         System.out.println("main complete");
     }
 }
+
+/*
+Child 2 : 0
+Child 1 : 0
+Child 1 : 1
+Child 2 : 1
+Child 1 : 2
+Child 2 : 2
+Child 1 : 3
+Child 2 : 3
+Child 1 : 4
+Child 2 : 4
+Child 1 : 5
+Child 2 : 5
+Child 1 : 6
+Child 2 : 6
+Child 1 : 7
+Child 2 : 7
+Child 1 : 8
+Child 2 : 8
+Child 1 : 9
+Child 2 : 9
+Starting child 3 and 4
+Child 3 : 0
+Child 4 : 0
+Child 3 : 1
+Child 4 : 1
+Child 4 : 2
+Child 3 : 2
+Child 3 : 3
+Child 4 : 3
+Child 3 : 4
+Child 4 : 4
+Child 4 : 5
+Child 3 : 5
+time the main thread waited for child 3 and child 4 to complete: 1005
+main : 0
+main : 1
+main : 2
+main : 3
+main : 4
+main : 5
+main : 6
+main : 7
+main : 8
+main : 9
+main complete
+Child 4 : 6
+Child 3 : 6
+Child 4 : 7
+Child 3 : 7
+Child 3 : 8
+Child 4 : 8
+Child 3 : 9
+Child 4 : 9
+ */

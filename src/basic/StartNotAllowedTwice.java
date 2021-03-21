@@ -20,3 +20,19 @@ public class StartNotAllowedTwice {
         child1.start();
     }
 }
+
+/*
+Exception in thread "main" java.lang.IllegalThreadStateException
+	at java.base/java.lang.Thread.start(Thread.java:792)
+	at basic.StartNotAllowedTwice.main(StartNotAllowedTwice.java:20)
+Child 1 : 0
+Child 1 : 1
+Child 1 : 2
+Child 1 : 3
+Child 1 : 4
+Child 1 : 5
+Child 1 : 6
+Child 1 : 7
+Child 1 : 8
+Child 1 : 9
+ */

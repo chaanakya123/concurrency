@@ -48,3 +48,24 @@ public class InterruptSleep {
         System.out.println("main complete");
     }
 }
+/*
+Child 2 : 0
+Child 4 : 0
+Child 1 : 0
+main : 0
+Child 3 : 0
+main : 1
+main : 2
+main : 3
+main : 4
+main : 5
+main : 6
+main : 7
+main : 8
+main : 9
+main complete
+I (Child 3) am interrupted
+I (Child 2) am interrupted
+I (Child 4) am interrupted
+I (Child 1) am interrupted
+ */
